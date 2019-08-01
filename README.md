@@ -1,6 +1,9 @@
 # latexTCE_ME
 Just a Latex Example for ME Project and Miniproject Reports
+Spend more time on Research and less time prepping Documents/ happy Latexing!
 
-Still need to add List of Abbrivations and List of symbols to Table of Contents, 
+Mostly Error Free / Still need to approve table of contents design /
+if any bug, I will be at Signal Processing Lab of ECE Dept,TCE
 
-Must change Bibliography to References
+Created using TeXworks / Miktex!
+
