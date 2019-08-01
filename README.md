@@ -1,5 +1,6 @@
 Download the zipfile, extract it and run .tex file
 
+folder presentation contains sample presentation creation using Latex
 # latexTCE_ME
 Just a Latex Example for ME Project and Miniproject Reports
 Spend more time on Research and less time prepping Documents/ happy Latexing!
