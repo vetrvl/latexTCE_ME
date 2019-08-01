@@ -15,8 +15,7 @@
 %-------------------Line spacing------------------------------%
 \usepackage{setspace} 
 \linespread{1.5} 
-%----change name bibliograpy to references---%
-\renewcommand\bibname{References}
+
 % Set the right side of the footer to be the page number
 %\fancyfoot[R]{\thepage}'
 %\fancypagestyle{report}{%
@@ -70,11 +69,12 @@
   
   
   \setcounter{tocdepth}{4}
-\setcounter{secnumdepth}{4}
+
 
 \usepackage{tocbibind}
 %\addcontentsline{toc}{chapter}{List of Symbols}
-
+%----change name bibliograpy to references---%
+\renewcommand\bibname{References}
 \begin{document}
 
 %\title{Understanding Latex for Beginners}
@@ -84,6 +84,7 @@
 
 %\maketitle
 \begin{titlepage}
+\addcontentsline{toc}{chapter}{Title Page}
    \begin{center}
 %       \vspace*{1cm}
  
@@ -119,7 +120,12 @@ RESTORATION OF CLIPPED SIGNAL IN SPEECH RECOGNITION SYSTEM}}\\
  
    \end{center}
 \end{titlepage}
+\setcounter{secnumdepth}{-2}
+
+
 \thispagestyle{plain}
+\setcounter{page}{2}
+\addcontentsline{toc}{chapter}{Bonafide Certificate}
 \begin{center}
      \Large\textbf{THIAGARAJAR COLLEGE OF ENGINEERING}\\
        \normalsize (An Autonomous Institution Affiliated To Anna University, Chennai)\\
@@ -149,7 +155,8 @@ Dr. S.J.Thiruvengadam, M.E., Ph.D. \\
  Certified that the Candidate was examined in the Viva-Voce Examination held at Thiagarajar College of Engineering, Madurai on \_\_\_\_\_\_\_\_\_\_\\\\
  
 \noindent INTERNAL EXAMINER \hspace{1.5cm} EXTERNAL EXAMINER \hspace{1.5cm}HOD ECE
-\chapter*{ACKNOWLEDGEMENT}
+\chapter*{Acknowledgement}
+\addcontentsline{toc}{chapter}{Acknowledgement}
 I would like to express my wholehearted gratitude to our management
 for provided me with all facilities to build my project successfully. I express
 my sincere thanks to \textbf{Dr. KARUMUTTU T. KANNAN}, Chairman and
@@ -174,6 +181,7 @@ ideas.
 \listoffigures
 \listoftables
 \chapter*{List of Symbols}
+\addcontentsline{toc}{chapter}{List of Symbols}
 \begin{tabular}{cp{0.6\textwidth}}
   $x$ & position \\
   $v$ & velocity \\
@@ -182,6 +190,7 @@ ideas.
   $F$ & force
 \end{tabular}\\
 \chapter*{List of Abbreviations}
+\addcontentsline{toc}{chapter}{List of Abbreviations}
 \begin{tabular}{cp{0.6\textwidth}}
   SMS & Short Messaging Service \\
   5GEx & 5G Exchange \\
@@ -190,6 +199,12 @@ ideas.
   F & force
 \end{tabular}\\
 %\newpage
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+Speech signals can be distorted in many ways. One of them is called “clipping”. A clipped signal differs from a non-clipped signal in the way that the amplitudes of the speech that are higher than a certain amplitude threshold has been partially lowered or completely lowered to the threshold. Clipping drops the performance of speech processing systems like speaker recognition or speaker verification systems where the gain is reduced which causes the deterioration of speech quality. Hence, it is required to develop a signal processing algorithm to restore the signal. \par
+In this project, Clipped speech signal is restored by linear prediction. The coefficients of linear prediction are computed using Least square directed method. The speech restoration is accomplished using forward prediction and backward prediction. Both prediction attempts to restore the signal by solving clipping problem. Evaluation and comparison of the forward prediction and backward prediction showed that missing samples could be easily computed by means of future samples compare to past samples. So, backward prediction method typically performed better than the forward prediction by means of restoring the original signal.
+
+\setcounter{secnumdepth}{4}
 \mainmatter
 
 %\cleardoublepage
