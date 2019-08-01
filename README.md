@@ -7,3 +7,5 @@ if any bug, I will be at Signal Processing Lab of ECE Dept,TCE
 
 Created using TeXworks / Miktex!
 
+caption to figure to fig. and bolding that yet to do
+
