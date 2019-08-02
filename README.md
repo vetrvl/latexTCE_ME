@@ -1,5 +1,4 @@
 Download the zipfile, extract it and run .tex file
-version 1.4
 
 https://tablesgenerator.com for creating tables
 
